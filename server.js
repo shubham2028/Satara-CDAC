@@ -49,5 +49,22 @@ app.get("/aboutus",(req,res)=>{
     );
 });
 
+app.get("/login",(req,res)=>{
+
+    res.send(
+        "<h1>Satara CDAC</h1>"
+        +"<hr/>"
+        +"<h1>Login</h1>"
+        +"<div class='row g-3'>"
+        +"<div class='col'>"
+        +"<input type='text' class='form-control' placeholder='First name' aria-label='First name'>"
+        +"</div>"
+        +"<div class='col'>"
+        +"<input type='text' class='form-control' placeholder='Last name' aria-label='Last name'>"
+        +"</div>"
+        +"</div>"
+    );
+});
+
 var server = app.listen(9000);
 console.log("Satara CDAC is running on port 9000");
